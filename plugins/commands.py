@@ -57,7 +57,7 @@ async def start(bot, cmd):
                 buttons = [
                     [
                         InlineKeyboardButton('🔎 Search again', switch_inline_query_current_chat=''),
-                        InlineKeyboardButton('Request Movies 🎟', url='https://t.me/MOVIECLUB_CHAT')
+                        InlineKeyboardButton('Request Movies 🎟', url='https://t.me/joinchat/FYBCIcMfr0AyOTFl')
                     ]
                     ]
                 await bot.send_cached_media(
@@ -90,14 +90,14 @@ async def start(bot, cmd):
                 [
                     [
                         InlineKeyboardButton("🔎Search Here", switch_inline_query_current_chat=''),
-                        InlineKeyboardButton("Request Movies 🎟", url="https://t.me/MOVIECLUB_CHAT")
+                        InlineKeyboardButton("Request Movies 🎟", url="https://t.me/universalmovieE")
                     ],
                     [
                         InlineKeyboardButton("👩‍💻 Owner", url="https://t.me/MagnusTG"),
                         InlineKeyboardButton("About 😎", callback_data="about")
                     ],
                     [
-                        InlineKeyboardButton("🏅JOIN MAIN CHANNEL🏅", url="http://t.me/MC_HelperBot")
+                        InlineKeyboardButton("🏅JOIN MAIN CHANNEL🏅", url="https://t.me/joinchat/FYBCIcMfr0AyOTFl")
                     ]
                 ]
             )
