@@ -40,9 +40,9 @@ async def answer(bot, query):
                                                   offset=offset)
 
     for file in files:
-        caption = f"<code>{file.file_name}</code>\n\n<i>© Powered by @MovieClubOfficiall</i>",
+        caption = f"<code>{file.file_name}</code>\n\n<i>© Powered by @universalmoviesS</i>",
         if caption is None:
-            caption = f"<code>{file.file_name}</code>\n\n<i>© Powered by @MovieClubOfficiall</i>"
+            caption = f"<code>{file.file_name}</code>\n\n<i>© Powered by @universalmoviesS</i>"
         results.append(
             InlineQueryResultCachedDocument(
                 title=file.file_name,
