@@ -54,7 +54,7 @@ async def filter(client, message):
         if files:
             for file in files:
                 file_id = file.file_id
-                filename = f"📁 [{get_size(file.file_size)}] 📒 {file.file_name}"
+                filename = f"📂 [{get_size(file.file_size)}]{file.file_name}"
                 btn.append(
                     [InlineKeyboardButton(text=f"{filename}",callback_data=f"NickxFury#{file_id}")]
                     )
@@ -95,8 +95,8 @@ async def filter(client, message):
         )
 
         await message.reply_photo(
-                photo="https://telegra.ph/file/515db16404c6a688609cf.jpg",
-                caption=f"<b><i><a href='https://t.me/MOVIECLUB_CHAT'>⭕️ Click Here To Join Movie Club For Your Favorite Movies/Series ⭕️</a>\n\nHere is What I Found In My Database For Your Query <code>{search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </code></i></b>",
+                photo="https://telegra.ph/file/8b399540be585cb613bd5.jpg",
+                caption=f"<b><i><a href='https://t.me/universalmovieE'>⭕️ Click Here To Join Movie Club For Your Favorite Movies/Series ⭕️</a>\n\nHere is What I Found In My Database For Your Query <code>{search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </code></i></b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )    
 
@@ -152,7 +152,7 @@ async def group(client, message):
         )
 
         await message.reply_photo(
-                photo="https://telegra.ph/file/515db16404c6a688609cf.jpg",
+                photo="",
                 caption=f"<b><i><a href='https://t.me/MOVIECLUB_CHAT'>⭕️ Click Here To Join Movie Club For Your Favorite Movies/Series ⭕️</a>\n\nHere is What I Found In My Database For Your Query <code>{search} ‌‌‌‌‎ ­  ­  ­  ­  ­  </code></i></b>",
                 reply_markup=InlineKeyboardMarkup(buttons)
             )
@@ -311,13 +311,13 @@ async def cb_handler(client: Client, query: CallbackQuery):
             for files in filedetails:
                 file_caption = files.file_name
                 size=files.file_size
-                caption =f'<code>{files.file_name}</code>\n\n<i>© Powered by @MovieClubOfficiall</i>'
+                caption =f'<code>{files.file_name}</code>\n\n<i>© Powered by @universalmoviesS</i>'
                 if caption is None:
-                    caption = f"<code>{files.file_name}</code>\n\n<i>© Powered by @MovieClubOfficiall</i>"
+                    caption = f"<code>{files.file_name}</code>\n\n<i>© Powered by @universalmoviesS</i>"
                 buttons = [
                     [
-                        InlineKeyboardButton('🎟 Request', url='https://t.me/MOVIECLUB_CHAT'),
-                        InlineKeyboardButton('Channel 🍿', url='https://t.me/MovieClubOfficiall')
+                        InlineKeyboardButton('🎟 Request', url='https://t.me/universalmovieE'),
+                        InlineKeyboardButton('Channel 🍿', url='https://t.me/joinchat/FYBCIcMfr0AyOTFl')
                     ]
                     ]
                 
