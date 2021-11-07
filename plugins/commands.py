@@ -63,7 +63,7 @@ async def start(bot, cmd):
                 await bot.send_cached_media(
                     chat_id=cmd.from_user.id,
                     file_id=file_id,
-                    caption=f'<code>{files.file_name}</code>\n\n<i>© Powered by @MovieClubOfficiall</i>',
+                    caption=f'<code>{files.file_name}</code>\n\n<i>© Powered by @universalmoviesS</i>',
                     reply_markup=InlineKeyboardMarkup(buttons)
                     )
         except Exception as err:
@@ -89,15 +89,15 @@ async def start(bot, cmd):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton("🔎 Search Here", switch_inline_query_current_chat=''),
+                        InlineKeyboardButton("🔎Search Here", switch_inline_query_current_chat=''),
                         InlineKeyboardButton("Request Movies 🎟", url="https://t.me/MOVIECLUB_CHAT")
                     ],
                     [
-                        InlineKeyboardButton("👩‍💻 Owner", url="http://t.me/NickxFury_bot"),
+                        InlineKeyboardButton("👩‍💻 Owner", url="https://t.me/MagnusTG"),
                         InlineKeyboardButton("About 😎", callback_data="about")
                     ],
                     [
-                        InlineKeyboardButton("📝 FeedBack 📝", url="http://t.me/MC_HelperBot")
+                        InlineKeyboardButton("🏅JOIN MAIN CHANNEL🏅", url="http://t.me/MC_HelperBot")
                     ]
                 ]
             )
@@ -186,20 +186,20 @@ async def delete(bot, message):
 async def bot_info(bot, message):
     buttons = [
         [
-            InlineKeyboardButton('🎟 Request Movies 🎟', url='https://t.me/MOVIECLUB_CHAT'),
+            InlineKeyboardButton('🎟 Request Movies 🎟', url='https://t.me/joinchat/FYBCIcMfr0AyOTFl'),
             InlineKeyboardButton('🥶 Source Code 🥶', url='https://t.me/AdhavaaBiriyaniKittiyalo')
         ]
         ]
     await query.message.edit(text="""🙋🏻‍♂️ Hellooo <code> {} 😎</code>
 
-<b>✴️ Owner :</b> <a href='https://t.me/NickxFury_bot'>Nick Fury</a>
+<b>○ Owner :</b> <a href='https://t.me/MagnusTG'>MagnusTG</a>
 
-<b>✴️ Language :</b> <code>Python3</code>
+<b>○ Language :</b> <code>Python3</code>
 
-<b>✴️ Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a></b>
+<b>○ Library :</b> <a href='https://docs.pyrogram.org/'>Pyrogram asyncio</a></b>
 
-<b>✴️ Source Code :</b> <a href='https://t.me/AdhavaaBiriyaniKittiyalo'>Click here</a>
+<b>○ Source Code :</b> <a href='https://t.me/AdhavaaBiriyaniKittiyalo'>Click here</a>
 
-<b>✴️ Request Movies :</b> <a href='https://t.me/MOVIECLUB_CHAT'>Movie Club</a>
+<b>○ Request Movies :</b> <a href='https://t.me/universalmovieE'>Movie Club</a>
 
 </b>📜 Quote :</b> <code>ആരും പേടിക്കണ്ട എല്ലാവർക്കും കിട്ടും™️</code>""".format(query.from_user.mention))
